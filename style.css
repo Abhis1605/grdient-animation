@@ -1,0 +1,119 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+}
+.container{
+     display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    position: relative;
+ background: linear-gradient(45deg, #f64f59, #c471ed, #12c2e9 ,pink);
+ background-size: 400% 400%;
+background-blend-mode: normal;
+
+animation: gradient 11s linear infinite;
+
+}
+@keyframes gradient {
+    0%{
+        background-position: 0% 50%;
+    }
+    50%{
+        background-position: 100% 50%;
+    }
+    100%{
+        background-position: 0% 50%;
+    }
+}
+.custom-shape-divider-bottom-1755064371 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1755064371 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 150px;
+}
+
+.custom-shape-divider-bottom-1755064371 .shape-fill {
+    fill: #FFFFFF;
+}
+.container .text{
+    color: white;
+}
+.text h3{
+    text-align: center;
+    font-size: 100px;
+    font-weight: 500;
+}
+.text p{
+    text-transform: capitalize;
+    font-size: 50px;
+    font-weight: 200;
+}
+
+
+@media (max-width:1228px) {
+    .text h3{
+    text-align: center;
+    font-size: 80px;
+    font-weight: 500;
+}
+.text p{
+    text-transform: capitalize;
+    font-size: 40px;
+    font-weight: 200;
+}
+}
+@media (max-width:1026px) {
+    .text h3{
+    text-align: center;
+    font-size: 60px;
+    font-weight: 500;
+}
+.text p{
+    text-transform: capitalize;
+    font-size: 30px;
+    font-weight: 200;
+}
+}
+@media (max-width:775px) {
+    .text h3{
+    text-align: center;
+    font-size: 60px;
+    font-weight: 500;
+}
+.text p{
+    text-transform: capitalize;
+    font-size: 25px;
+    font-weight: 400;
+}
+}
+
+@media (max-width:664px) {
+    .text h3{
+    text-align: center;
+    font-size: 5vh;
+    font-weight: 500;
+}
+.text p{
+    text-transform: capitalize;
+    font-size: 3.6vw;
+    font-weight: 500;
+}
+}
